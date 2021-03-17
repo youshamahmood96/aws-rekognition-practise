@@ -31,8 +31,8 @@ PDX-License-Identifier: MIT-0 (For details, see https://github.com/awsdocs/amazo
       Image: {
         Bytes: imageData
       },
-      MaxLabels: 10,
-      MinConfidence: 50
+      MaxLabels: 30,
+      MinConfidence: 20
     };
     rekognition.detectLabels(params, function(err, data) {
   if (err) console.log(err, err.stack); // an error occurred
